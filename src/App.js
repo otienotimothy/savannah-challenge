@@ -9,12 +9,12 @@ function App() {
 
 	return (
 		<QueryClientProvider client={queryClient}>
-			<div style={{ backgroundColor: "#0B192E", minHeight: "100vh" }}>
+			<div style={{ backgroundColor: "#0B192E", minHeight: "100vh", paddingBottom: "2.5rem" }}>
 				<BrowserRouter>
 					<Navbar />
 					<Routes>
 						<Route path="/" element={<Home />} />
-						<Route path="/posts/:userId" element={<Posts />} />
+						<Route path=":username/posts/:userId" element={<Posts />} />
 					</Routes>
 				</BrowserRouter>
 			</div>
