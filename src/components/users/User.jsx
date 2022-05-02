@@ -27,7 +27,7 @@ export function User({user}){
 							{user.website}
 						</Link>
 					</p>
-					<Link to={`/posts/${user.id}`} className="btn btn-primary">
+					<Link to={`/${user.username}/posts/${user.id}`} className="btn btn-primary">
 						Posts
 					</Link>
 				</div>
