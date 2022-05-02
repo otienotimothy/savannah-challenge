@@ -4,7 +4,7 @@ export function User({user}){
     return (
 			<div
 				className="card shadow-lg mb-4"
-				style={{ width: "18rem", backgroundColor: "#102340" }}
+				style={{ width: "25rem", backgroundColor: "#102340" }}
 			>
 				<div className="card-body">
 					<h5 className="card-title text-light"> {user.name} </h5>
@@ -27,7 +27,7 @@ export function User({user}){
 							{user.website}
 						</Link>
 					</p>
-					<Link to="#" className="btn btn-primary">
+					<Link to={`/posts/${user.id}`} className="btn btn-primary">
 						Posts
 					</Link>
 				</div>
