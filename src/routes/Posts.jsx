@@ -4,6 +4,7 @@ import { useQuery } from "react-query";
 import { getUserPosts } from "../api-layer/posts";
 
 import { Post } from "../components";
+import { Spinner } from "../components";
 
 export function Posts() {
 	const { userId, username } = useParams();
@@ -13,11 +14,9 @@ export function Posts() {
 	);
 
 	if (isLoading) {
-		return <h1>Loading...</h1>;
-	} else {
-		console.log(data);
+		return <Spinner />
 	}
-
+	
 	return (
 		<div className="container">
 			<Link className="btn btn-primary my-3 text-light" to="/">
