@@ -1,7 +1,7 @@
 import { QueryClientProvider, QueryClient } from "react-query"
 import { BrowserRouter , Routes, Route} from "react-router-dom";
 import { Navbar } from "./components";
-import {Home, Posts} from "./routes"
+import {Home, Posts, ChangeName} from "./routes"
 
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path=":username/posts/:userId" element={<Posts />} />
+						<Route path="/profile/:userId" element={ <ChangeName /> } />
 					</Routes>
 				</BrowserRouter>
 			</div>
