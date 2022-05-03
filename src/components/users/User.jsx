@@ -28,10 +28,7 @@ export function User({ user }) {
 					</Link>
 				</p>
 				<div className="d-flex align-items-center justify-content-between">
-					<Link
-						to={`/edit_profile/${user.id}`}
-						className="btn btn-primary"
-					>
+					<Link to={`/profile/${user.id}`} className="btn btn-primary">
 						Edit Profile
 					</Link>
 					<Link
