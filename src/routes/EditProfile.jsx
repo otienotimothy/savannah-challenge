@@ -30,6 +30,7 @@ export function ChangeName() {
 								name="name"
 								value={name}
 								onChange={handleChange}
+								required
 							/>
 						</div>
 						<button type="submit" class="btn btn-primary">
