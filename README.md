@@ -30,7 +30,7 @@
 ### Links
 
 - Project URL: [Project Repo](https://github.com/otienotimothy/savannah-challenge.git)
-- Live Site URL: 
+- Live Site URL: [Savannah Challenge](https://savannah-challenge.netlify.app/)
 
 ## My process
 
